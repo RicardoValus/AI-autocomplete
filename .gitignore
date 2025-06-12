@@ -1,0 +1,76 @@
+# -------------------------
+# Compiled output
+# -------------------------
+/dist
+/tmp
+/out-tsc
+/bazel-out
+/.sourcemaps
+/.versions
+/www
+/platforms
+/plugins
+
+# -------------------------
+# Node dependencies
+# -------------------------
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# -------------------------
+# Logs
+# -------------------------
+*.log
+log.txt
+chrome-profiler-events*.json
+/libpeerconnection.log
+testem.log
+/connect.lock
+
+# -------------------------
+# Angular / Ionic / NX
+# -------------------------
+/.angular
+.angular/cache
+/.ionic
+/.nx
+/.nx/cache
+/coverage
+/typings
+
+# -------------------------
+# IDEs and Editors
+# -------------------------
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+/*.sublime-project
+*.sublime-workspace
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# -------------------------
+# Temporary / Backup Files
+# -------------------------
+*~
+*.sw[mnpcod]
+.tmp
+*.tmp
+*.tmp.*
+
+# -------------------------
+# System Files
+# -------------------------
+.DS_Store
+Thumbs.db
+$RECYCLE.BIN/
