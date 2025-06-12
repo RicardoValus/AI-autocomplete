@@ -1,0 +1,18 @@
+<div class="autocomplete-container">
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Digite seu texto</mat-label>
+    <input matInput [formControl]="textInput" placeholder="Comece a digitar...">
+    <mat-spinner *ngIf="isModelLoading" diameter="20" class="spinner"></mat-spinner>
+    <div *ngIf="isModelLoading" class="loading-progress">
+      Carregando modelo: {{ loadingProgress }}%
+    </div>
+  </mat-form-field>
+
+  <div class="suggestions-container" *ngIf="suggestions.length > 0">
+    <mat-card *ngFor="let suggestion of suggestions" class="suggestion-card" (click)="selectSuggestion(suggestion)">
+      <mat-card-content>
+        {{ suggestion }}
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
